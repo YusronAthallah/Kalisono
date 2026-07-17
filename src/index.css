@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ── Dark Brown primary palette ── */
+  --color-leaf-50: #f6f3f2;
+  --color-leaf-100: #eae4e1;
+  --color-leaf-200: #d6c9c6;
+  --color-leaf-300: #baaaad;
+  --color-leaf-400: #a18883;
+  --color-leaf-500: #886a64;
+  --color-leaf-600: #6f514b;
+  --color-leaf-700: #593e39;
+  --color-leaf-800: #46302c;
+  --color-leaf-900: #332522; /* Warna target dari gambar */
+  --color-leaf-950: #201513;
+
+  /* ── Wood / Brown accent ── */
+  --color-wood-50: #f8f4f1;
+  --color-wood-100: #efe3dd;
+  --color-wood-200: #e0cec3;
+  --color-wood-300: #cdb2a2;
+  --color-wood-400: #b8937e;
+  --color-wood-500: #a3755b;
+  --color-wood-600: #8a5a41;
+  --color-wood-700: #704631;
+  --color-wood-800: #5c3928;
+  --color-wood-900: #4a2e21;
+
+  /* ── Warm neutrals (backgrounds) ── */
+  --color-warm-50: #faf9f6;
+  --color-warm-100: #f4f2ed;
+  --color-warm-200: #eae7e0;
+
+  /* ── Typography ── */
+  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-warm-50);
+  }
+  ::selection {
+    background-color: var(--color-leaf-200);
+    color: var(--color-leaf-900);
+  }
+}
