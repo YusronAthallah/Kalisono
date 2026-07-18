@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logoKkn from '../images/logo kkn copy.png';
 
 const navLinks = [
   { label: 'Beranda', href: '#beranda' },
@@ -32,10 +33,11 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#beranda"
-            className={`font-semibold tracking-tight transition-colors duration-300 ${
+            className={`flex items-center gap-3 font-semibold tracking-tight transition-colors duration-300 ${
               scrolled ? 'text-leaf-800' : 'text-white'
             }`}
           >
+            <img src={logoKkn} alt="Logo KKN" className="h-10 w-10 object-contain" />
             Padukuhan Kalisono
           </a>
 
